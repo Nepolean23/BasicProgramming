@@ -5,16 +5,17 @@
         static void Main(string[] args)
         {
             int year;
-            Console.WriteLine("Enter a year:");
+            Console.WriteLine("Enter a year in four digit number:");
             year=Convert.ToInt32(Console.ReadLine());
-            if (year >999)
+            if (year/4==0 && year/400==0||year/100!=0)
             {
-                Console.WriteLine("You have entered:" + year);
+                Console.WriteLine("It is a LeapYear");
             }
             else
             {
-                Console.WriteLine("you have entered a invalid year");
+                Console.WriteLine("It is not a LeapYear");
             }
+            
 
         }
         
