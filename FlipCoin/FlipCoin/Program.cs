@@ -15,8 +15,8 @@
             for (int i = 0; i < val1; i++)
             {
                 Random random = new Random();
-                int coin = random.Next(1, 3);
-                if (coin == 1)
+                int coin = random.Next(0, 2);
+                if (coin == 0)
                 {
                     Console.WriteLine("Its head");
                     head++;
